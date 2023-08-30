@@ -1,6 +1,6 @@
 export function Logo() {
   return (
-    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="w-11/12 flex items-center gap-2 text-xl font-semibold text-zinc-900">
       <svg
         width={38}
         height={38}
@@ -203,7 +203,7 @@ export function Logo() {
           </clipPath>
         </defs>
       </svg>
-      <span className="xs:sr-only">YGO Statistics</span>
+      <span className="xs:sr-only">Duelist Statistics</span>
     </strong>
   )
 }
