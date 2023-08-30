@@ -1,6 +1,5 @@
 import { Logo } from '@/app/components/Sidebar/Logo'
 import {
-  Search,
   BarChart,
   CheckSquare,
   Flag,
@@ -9,23 +8,23 @@ import {
   Users,
   Cog,
   LifeBuoy,
+  Search,
 } from 'lucide-react'
 import { NavItem } from './NavItem'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
+import { InputControl, InputPrefix, InputRoot } from '../Input'
 
 export function Sidebar() {
   return (
     <aside className="flex flex-col items-center gap-6 border-r border-zinc-200 px-5 py-8">
       <Logo />
-      <div className="flex w-11/12 items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm">
-        <Search className="h-5 w-5 text-zinc-500" />
-        <input
-          className="w-10/12 flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder:text-zinc-600"
-          placeholder="Search"
-          type="text"
-        />
-      </div>
+      <InputRoot>
+        <InputPrefix>
+          <Search className='w-5 h-5 text-zinc-500' />
+        </InputPrefix>
+        <InputControl placeholder='search' />
+      </InputRoot>
       <nav className="w-full space-y-0.5">
         <NavItem title="home" icon={Home} />
         <NavItem title="dashboard" icon={BarChart} />
