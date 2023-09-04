@@ -1,4 +1,4 @@
-import { Logo } from '@/app/components/Sidebar/Logo'
+import { Logo } from '@/components/Sidebar/Logo'
 import {
   BarChart,
   CheckSquare,
