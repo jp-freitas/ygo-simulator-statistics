@@ -1,23 +1,23 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Sidebar } from './components/Sidebar'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Sidebar } from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'YGO Simulator Statistics',
+  title: "YGO Simulator Statistics",
   description:
-    'A YGO Duel Simulator that automatic apply the statistics to each duelist.',
-}
+    "A YGO Duel Simulator that automatic apply the statistics to each duelist.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className='antialiased'>
+    <html lang="en" className="antialiased">
       <body className={inter.className}>
         <div className="min-h-screen grid grid-cols-app">
           <Sidebar />
@@ -25,5 +25,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
+  );
 }

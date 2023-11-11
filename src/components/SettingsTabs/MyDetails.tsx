@@ -1,7 +1,8 @@
-import { Mail } from "lucide-react";
-
 import * as Input from "@/components/Form/Input";
 import * as FileInput from "@/components/Form/FileInput";
+import { Mail } from "lucide-react";
+import { Select } from "../Form/Select";
+import { SelectItem } from "../Form/Select/SelectItem";
 
 export function MyDetails() {
   return (
@@ -92,7 +93,11 @@ export function MyDetails() {
           >
             Country
           </label>
-          <div></div>
+          <Select placeholder="Select a country...">
+            <SelectItem value="br" text="Brazil" />
+            <SelectItem value="ar" text="Argentina" />
+            <SelectItem value="us" text="United States" />
+          </Select>
         </div>
         <div className="grid grid-cols-form gap-3 pt-5">
           <label
@@ -124,7 +129,8 @@ export function MyDetails() {
           </label>
           <FileInput.Root>
             <FileInput.Trigger />
-            <FileInput.Control />
+            <FileInput.FileList />
+            <FileInput.Control multiple />
           </FileInput.Root>
         </div>
         <div className="flex items-center justify-end gap-2 pt-5">
