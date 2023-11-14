@@ -5,6 +5,7 @@ import * as FileInput from "@/components/Form/FileInput";
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
 import { Textarea } from "@/components/Form/TextArea";
+import { Button } from "../Button";
 
 export function MyDetails() {
   return (
@@ -17,19 +18,12 @@ export function MyDetails() {
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            className="rounded-lg border border-zinc-300 px-4 py-2 font-semibold capitalize text-zinc-700 shadow-sm hover:bg-zinc-50"
-          >
+          <Button variant="outline" type="button">
             cancel
-          </button>
-          <button
-            type="submit"
-            className="rounded-lg bg-violet-600 px-4 py-2 font-semibold capitalize text-white shadow-sm hover:bg-violet-700"
-            form="settings"
-          >
+          </Button>
+          <Button type="submit" form="settings">
             save
-          </button>
+          </Button>
         </div>
       </div>
       <form
@@ -127,39 +121,24 @@ export function MyDetails() {
                 <SelectItem value="md" text="Markdown" />
               </Select>
               <div className="flex items-center gap-1">
-                <button
-                  type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
-                >
+                <Button variant="ghost" type="button">
                   <Bold strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                </button>
-                <button
-                  type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
-                >
+                </Button>
+                <Button variant="ghost" type="button">
                   <Italic strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                </button>
-                <button
-                  type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
-                >
+                </Button>
+                <Button variant="ghost" type="button">
                   <Link strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                </button>
-                <button
-                  type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
-                >
+                </Button>
+                <Button variant="ghost" type="button">
                   <List strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                </button>
-                <button
-                  type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
-                >
+                </Button>
+                <Button variant="ghost" type="button">
                   <ListOrdered
                     strokeWidth={3}
                     className="h-4 w-4 text-zinc-500"
                   />
-                </button>
+                </Button>
               </div>
             </div>
             <Textarea
@@ -185,18 +164,12 @@ export function MyDetails() {
           </FileInput.Root>
         </div>
         <div className="flex items-center justify-end gap-2 pt-5">
-          <button
-            type="button"
-            className="rounded-lg border border-zinc-300 px-4 py-2 font-semibold capitalize text-zinc-700 shadow-sm hover:bg-zinc-50"
-          >
+          <Button variant="outline" type="button">
             cancel
-          </button>
-          <button
-            type="submit"
-            className="rounded-lg bg-violet-600 px-4 py-2 font-semibold capitalize text-white shadow-sm hover:bg-violet-700"
-          >
+          </Button>
+          <Button type="submit" form="settings">
             save
-          </button>
+          </Button>
         </div>
       </form>
     </div>
