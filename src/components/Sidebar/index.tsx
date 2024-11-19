@@ -1,4 +1,4 @@
-import { Logo } from "@/components/Sidebar/Logo";
+import { Logo } from '@/components/Sidebar/Logo'
 import {
   BarChart,
   CheckSquare,
@@ -9,15 +9,15 @@ import {
   Cog,
   LifeBuoy,
   Search,
-} from "lucide-react";
-import { NavItem } from "./NavItem";
-import { UsedSpaceWidget } from "./UsedSpaceWidget";
-import { Profile } from "./Profile";
-import * as Input from "@/components/Form/Input";
+} from 'lucide-react'
+import { NavItem } from './NavItem'
+import { UsedSpaceWidget } from './UsedSpaceWidget'
+import { Profile } from './Profile'
+import * as Input from '@/components/Form/Input'
 
 export function Sidebar() {
   return (
-    <aside className="flex flex-col items-center gap-6 border-r border-zinc-200 px-5 py-8">
+    <aside className="min-h-screen fixed w-[20rem] flex flex-col items-center gap-6 border-r border-zinc-200 px-5 py-8">
       <Logo />
       <Input.Root>
         <Input.Prefix>
@@ -43,5 +43,5 @@ export function Sidebar() {
         <Profile />
       </div>
     </aside>
-  );
+  )
 }

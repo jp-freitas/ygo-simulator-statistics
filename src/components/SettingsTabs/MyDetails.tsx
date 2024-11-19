@@ -1,11 +1,11 @@
-import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 
-import * as Input from "@/components/Form/Input";
-import * as FileInput from "@/components/Form/FileInput";
-import { Select } from "@/components/Form/Select";
-import { SelectItem } from "@/components/Form/Select/SelectItem";
-import { Textarea } from "@/components/Form/TextArea";
-import { Button } from "../Button";
+import * as Input from '@/components/Form/Input'
+import * as FileInput from '@/components/Form/FileInput'
+import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { Textarea } from '@/components/Form/TextArea'
+import { Button } from '../Button'
 
 export function MyDetails() {
   return (
@@ -173,5 +173,5 @@ export function MyDetails() {
         </div>
       </form>
     </div>
-  );
+  )
 }

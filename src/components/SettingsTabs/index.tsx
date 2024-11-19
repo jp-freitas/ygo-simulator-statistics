@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import * as Tabs from "@radix-ui/react-tabs";
-import { TabItem } from "./TabItem";
-import { useState } from "react";
-import { MyDetails } from "./MyDetails";
+import * as Tabs from '@radix-ui/react-tabs'
+import { TabItem } from './TabItem'
+import { useState } from 'react'
+import { MyDetails } from './MyDetails'
 
 export function SettingsTabs() {
-  const [currentTab, setCurrentTab] = useState("tab-01");
+  const [currentTab, setCurrentTab] = useState('tab-01')
 
   return (
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
@@ -14,52 +14,52 @@ export function SettingsTabs() {
         <TabItem
           value="tab-01"
           title="my details"
-          isSelected={currentTab === "tab-01"}
+          isSelected={currentTab === 'tab-01'}
         />
         <TabItem
           value="tab-02"
           title="profile"
-          isSelected={currentTab === "tab-02"}
+          isSelected={currentTab === 'tab-02'}
         />
         <TabItem
           value="tab-03"
           title="password"
-          isSelected={currentTab === "tab-03"}
+          isSelected={currentTab === 'tab-03'}
         />
         <TabItem
           value="tab-04"
           title="team"
-          isSelected={currentTab === "tab-04"}
+          isSelected={currentTab === 'tab-04'}
         />
         <TabItem
           value="tab-05"
           title="plan"
-          isSelected={currentTab === "tab-05"}
+          isSelected={currentTab === 'tab-05'}
         />
         <TabItem
           value="tab-06"
           title="billing"
-          isSelected={currentTab === "tab-06"}
+          isSelected={currentTab === 'tab-06'}
         />
         <TabItem
           value="tab-07"
           title="email"
-          isSelected={currentTab === "tab-07"}
+          isSelected={currentTab === 'tab-07'}
         />
         <TabItem
           value="tab-08"
           title="notifications"
-          isSelected={currentTab === "tab-08"}
+          isSelected={currentTab === 'tab-08'}
         />
         <TabItem
           value="tab-09"
           title="integrations"
-          isSelected={currentTab === "tab-09"}
+          isSelected={currentTab === 'tab-09'}
         />
         <TabItem
           value="tab-10"
           title="API"
-          isSelected={currentTab === "tab-10"}
+          isSelected={currentTab === 'tab-10'}
         />
       </Tabs.List>
       <Tabs.Content value="tab-01">
@@ -93,5 +93,5 @@ export function SettingsTabs() {
         <h1>Tab 10</h1>
       </Tabs.Content>
     </Tabs.Root>
-  );
+  )
 }
