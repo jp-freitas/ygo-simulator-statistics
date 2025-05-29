@@ -1,6 +1,6 @@
-import { ComponentProps } from "react";
+import { ComponentProps } from 'react'
 
-export type ControlProps = ComponentProps<"input">;
+export type ControlProps = ComponentProps<'input'>
 
 export function Control({ ...props }: ControlProps) {
   return (
@@ -9,5 +9,5 @@ export function Control({ ...props }: ControlProps) {
       type="text"
       {...props}
     />
-  );
+  )
 }
