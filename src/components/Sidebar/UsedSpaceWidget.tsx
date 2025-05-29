@@ -27,5 +27,5 @@ export function UsedSpaceWidget() {
         </button>
       </div>
     </div>
-  );
+  )
 }

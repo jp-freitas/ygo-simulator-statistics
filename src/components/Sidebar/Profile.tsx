@@ -1,12 +1,12 @@
-import { LogOut } from "lucide-react";
-import Image from "next/image";
-import { Button } from "../Button";
+import { LogOut } from 'lucide-react'
+import Image from 'next/image'
+import { Button } from '../Button'
 
 export function Profile() {
   return (
     <div className="grid items-center gap-3 grid-cols-profile">
       <Image
-        src={"https://github.com/jp-freitas.png"}
+        src={'https://github.com/jp-freitas.png'}
         width={40}
         height={40}
         alt="user profile picture"
@@ -22,5 +22,5 @@ export function Profile() {
         <LogOut className="h-5 w-5 text-zinc-500" />
       </Button>
     </div>
-  );
+  )
 }

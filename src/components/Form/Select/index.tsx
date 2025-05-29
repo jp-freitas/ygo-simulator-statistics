@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import * as SelectPrimitive from "@radix-ui/react-select";
-import { ChevronDown } from "lucide-react";
-import { ReactNode } from "react";
+import * as SelectPrimitive from '@radix-ui/react-select'
+import { ChevronDown } from 'lucide-react'
+import { ReactNode } from 'react'
 
 export interface SelectProps extends SelectPrimitive.SelectProps {
-  children: ReactNode;
-  placeholder: string;
+  children: ReactNode
+  placeholder: string
 }
 
 export function Select({ children, placeholder, ...props }: SelectProps) {
@@ -34,5 +34,5 @@ export function Select({ children, placeholder, ...props }: SelectProps) {
         </SelectPrimitive.Content>
       </SelectPrimitive.Portal>
     </SelectPrimitive.Root>
-  );
+  )
 }

@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import * as Select from "@radix-ui/react-select";
-import { Check } from "lucide-react";
+import * as Select from '@radix-ui/react-select'
+import { Check } from 'lucide-react'
 
 export type SelectItemProps = Select.SelectItemProps & {
-  value: string;
-  text: string;
-};
+  value: string
+  text: string
+}
 
 export function SelectItem({ value, text }: SelectItemProps) {
   return (
@@ -19,5 +19,5 @@ export function SelectItem({ value, text }: SelectItemProps) {
         <Check className="h-4 w-4 text-violet-500" />
       </Select.ItemIndicator>
     </Select.Item>
-  );
+  )
 }
